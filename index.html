@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <script src="https://kit.fontawesome.com/603237a2fd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="menu">
+        <div class="logo-class">
+          <img src="images/logo.png" class="logo" />
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PORTFOLIO</li>
+            <li>SERVICES</li>
+            <li>HIRE ME</li>
+            <li id="moon"><i class="fa-sharp fa-solid fa-moon"></i></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="about">
+        <div class="intro">
+          <h1>I'm <span style="color: #e21818">Sandeep</span> Reddy</h1>
+          <p>
+            This is my official portfolio website to showcase all my works
+            related to my web design
+          </p>
+          <button>Download CV</button>
+        </div>
+
+        <div class="girl-logo ">
+          <img  src="images/girl.png" class="girl animate__bounce" />
+          <img src="images/pattern.png" class="pattern" />
+        </div>
+      </div>
+    </div>
+ 
+    <script>
+          var icon = document.getElementById("iconn");
+          let moon = document.getElementById("moon");
+          
+          icon.addEventListener("click", function(){
+               document.body.classList.toggle("dark-theme");
+                moon.innerHTML = ""
+          });
+
+    </script>
+
+  </body>
+</html>
